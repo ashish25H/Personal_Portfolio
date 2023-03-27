@@ -4,9 +4,9 @@ import burger from "../assets/meanuImg/hamburger.png";
 import cross from "../assets/meanuImg/cross.png";
 
 const NavBar = () => {
-//   const burgerIcon = document.getElementById("burgerIcon");
-//   const crossIcon = document.getElementById("crossIcon");
-//   const meanuList2 = document.getElementById("meanuList2");
+  //   const burgerIcon = document.getElementById("burgerIcon");
+  //   const crossIcon = document.getElementById("crossIcon");
+  //   const meanuList2 = document.getElementById("meanuList2");
 
   const showMeanu = () => {
     const burgerIcon = document.getElementById("burgerIcon");
@@ -33,17 +33,20 @@ const NavBar = () => {
 
   return (
     <>
-      <nav className="sm:flex justify-between items-center bg-[#2C3E50] p-3 text-[#fff]">
+      <nav className="sm:flex justify-between items-center bg-[#2C3E50] p-3 text-[#fff] md:flex md:items-center md:p-6">
         <div className="sm:font-semibold text-xl font-mono">Ashish</div>
         <div>
-          <ul className="sm:hidden mt-10 text-[#fff]" id="meanuList">
-            <li>
+          <ul
+            className="sm:hidden mt-10 text-[#fff] md:flex md:mt-0"
+            id="meanuList"
+          >
+            <li className="md:mx-4 md:hover:text-[#1ABC9C] md:font-semibold">
               <Link to="/">Profile</Link>
             </li>
-            <li>
-              <Link to="#projects">Projects</Link>
+            <li className="md:mx-4 md:hover:text-[#1ABC9C] md:font-semibold">
+              <Link to="/projects">Projects</Link>
             </li>
-            <li>
+            <li className="md:mx-4 md:hover:text-[#1ABC9C] md:font-semibold">
               <Link to="/Contact">Contact</Link>
             </li>
           </ul>
@@ -52,31 +55,30 @@ const NavBar = () => {
             <img
               src={burger}
               alt="burger img"
-              className="  md:hidden xl:hidden 2xl:hidden"
+              className="md:hidden xl:hidden 2xl:hidden"
               id="burgerIcon"
               onClick={showMeanu}
             />
             <img
               src={cross}
               alt="cross img"
-              className="sm:hidden  md:hidden lg:hidden xl:hidden 2xl:hidden "
+              className="sm:hidden  md:hidden "
               id="crossIcon"
               onClick={showMeanu2}
             />
           </div>
         </div>
-        
       </nav>
 
       <div>
-        <ul className="sm:hidden text-center 2xl:hidden" id="meanuList2">
-          <li className="m-1 font-semibold text-md">
+        <ul className="sm:hidden text-center md:hidden " id="meanuList2">
+          <li className="m-1 font-semibold text-md md:m-0 lg:m-0">
             <Link to="/">Profile</Link>
           </li>
-          <li className="m-1 font-semibold text-md">
+          <li className="m-1 font-semibold text-md md:m-0 lg:m-0">
             <Link to="/projects">Projects</Link>
           </li>
-          <li className="m-1 font-semibold text-md">
+          <li className="m-1 font-semibold text-md md:m-0 lg:m-0">
             <Link to="/Contact">Contact</Link>
           </li>
         </ul>

@@ -44,6 +44,9 @@ const NavBar = () => {
               <Link to="/">Profile</Link>
             </li>
             <li className="md:mx-4 md:hover:text-[#1ABC9C] md:font-semibold">
+              <Link to="/skills">Skills</Link>
+            </li>
+            <li className="md:mx-4 md:hover:text-[#1ABC9C] md:font-semibold">
               <Link to="/projects">Projects</Link>
             </li>
             <li className="md:mx-4 md:hover:text-[#1ABC9C] md:font-semibold">

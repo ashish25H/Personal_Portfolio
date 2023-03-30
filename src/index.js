@@ -8,6 +8,7 @@ import reportWebVitals from "./reportWebVitals";
 import Profile from "./Components/Profile";
 import Contact from "./Components/Contact";
 import Projects from "./Components/Projects";
+import Skills from "./Components/Skills";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -15,6 +16,7 @@ root.render(
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/profile" element={<Profile />} />
+      <Route path='/Skills' element={<Skills />} />
       <Route path="/Projects" element={<Projects />} />
       <Route path="/Contact" element={<Contact />} />
     </Routes>

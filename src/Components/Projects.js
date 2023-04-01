@@ -15,7 +15,7 @@ const Project = () => {
   return (
     <>
       <NavBar />
-      <div className="sm:flex flex-col justify-center items-center md:bg-[#1ABC9C] md:p-4 md:grid grid-rows-2 grid-flow-col gap-10 justify-self-stretch items-stretch">
+      <div className="flex flex-col justify-center items-center sm:flex sm:flex-col sm:justify-center sm:items-center md:bg-[#1ABC9C] md:p-4 md:grid grid-rows-2 grid-flow-col gap-10 justify-self-stretch items-stretch">
         <ProjectCard video={proj1} name='Circle' tech='HTML,CSS,JavaScript' link='https://classy-kringle-c34145.netlify.app/'/>
         <ProjectCard video={musicApp} name='Music App' tech='HTML,CSS,JavaScript' link='https://sensational-lollipop-75de81.netlify.app/'/>
         <ProjectCard video={movieApp} name='Movie App' tech='HTML,Tailwnid CSS,JavaScript,React' link='https://curious-kringle-c9a096.netlify.app/'/>

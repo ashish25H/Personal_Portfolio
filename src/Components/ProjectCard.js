@@ -17,8 +17,8 @@ const ProjectCard = ({ video, name, tech, link }) => {
       </video>
 
       <div className="flex flex-col justify-center items-center px-4 text-center">
-        <p className="mb-2 text-[#758283] font-semibold">Name : {name}</p>
-        <p className="mb-3 text-[#758283] font-semibold">TechStack : {tech}</p>
+        <p className="mb-2 text-[#d9dcdc] font-semibold">Name : {name}</p>
+        <p className="mb-3 text-[#d9dcdc] font-semibold">TechStack : {tech}</p>
         <Link to={link} target={"_blank"}>
           <button className="bg-[#5DA3FA] py-2 px-4 rounded-md text-[#242B2E] font-semibold mb-3">
             Live link
